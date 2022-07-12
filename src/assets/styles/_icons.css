@@ -1,0 +1,47 @@
+.icon {
+  display: inline-block;
+  mask-size: cover;
+  background: #9896a1;
+}
+
+.icon-overview {
+  mask: url("../icons/overview.svg");
+  width: 20px;
+  height: 21px;
+}
+
+.icon-trade {
+  mask: url("../icons/trade.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.icon-wallets {
+  mask: url("../icons/wallets.svg");
+  width: 20px;
+  height: 21px;
+}
+
+.icon-bundles {
+  mask: url("../icons/bundles.svg");
+  width: 22px;
+  height: 22px;
+}
+
+.icon-reporting {
+  mask: url("../icons/reporting.svg");
+  width: 18px;
+  height: 22px;
+}
+
+.icon-community {
+  mask: url("../icons/community.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.icon-dots {
+  mask: url("../icons/dots.svg");
+  width: 18px;
+  height: 4px;
+}

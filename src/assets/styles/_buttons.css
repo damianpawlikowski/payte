@@ -1,0 +1,49 @@
+.button-blank {
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: auto;
+  height: auto;
+  padding: 8px 16px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.button-primary {
+  background: rgba(116, 69, 251, 1);
+  color: #fff;
+  transition: 0.2s ease-in background;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  background: rgba(116, 69, 251, 0.9);
+}
+
+.button-secondary {
+  background: #fff;
+  border: 1px solid #ebebf3;
+  color: rgba(116, 69, 251, 1);
+  transition: 0.2s ease-in color;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  color: rgba(10, 4, 28, 1);
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}

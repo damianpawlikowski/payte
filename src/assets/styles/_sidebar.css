@@ -1,0 +1,206 @@
+.sidebar {
+  display: none;
+  width: 100%;
+  z-index: 9999;
+  background: #f7f7f9;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+
+  animation: fadeInLeft;
+  animation-duration: 1s;
+}
+
+.sidebar-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 10px 0 10px;
+  padding: 0 14px;
+}
+
+.sidebar-button-hide {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-button-hide:after {
+  display: inline-block;
+  content: "\00d7";
+}
+
+.sidebar-menu {
+  margin-top: 63px;
+  list-style-type: none;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sidebar-menu-item {
+  margin: 0 10px 22px 10px;
+}
+
+.sidebar-menu-item:last-child {
+  margin-bottom: 24px;
+}
+
+.sidebar-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 17px;
+  text-decoration: none;
+  color: rgba(10, 4, 28, 0.4);
+  transition: 0.2s ease-in color;
+}
+
+.sidebar-menu-link:hover,
+.sidebar-menu-link:focus {
+  color: #7445fb;
+}
+
+.sidebar-menu-link > span:first-child {
+  transition: 0.2s ease-in background;
+}
+
+.sidebar-menu-link:hover > span:first-child,
+.sidebar-menu-link:focus > span:first-child {
+  background: #7445fb;
+}
+
+.sidebar-menu-link.router-link-exact-active {
+  color: #0a041c;
+  font-weight: 600;
+  background: #fff;
+  border: 1px solid #ebebf3;
+  border-radius: 4px;
+}
+
+.sidebar-menu-link.router-link-exact-active > span:first-child {
+  background: #7445fb;
+}
+
+.sidebar-seperator {
+  border-bottom: 1px solid #9896a1;
+  opacity: 0.1;
+}
+
+.sidebar-bottom {
+  padding: 24px 24px 0px 24px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 14px;
+  height: calc(100% - 536px);
+  justify-content: space-between;
+}
+
+.sidebar-bottom-favorites {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-bottom-favorites-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.sidebar-bottom-favorites-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebar-bottom-favorites-content-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-bottom-favorites-content-entry-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-bottom-favorites-content-entry-brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid #ebebf3;
+  border-radius: 50%;
+}
+
+.sidebar-bottom-favorites-content-entry-brand-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.sidebar-bottom-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 63px;
+  padding-bottom: 24px;
+}
+
+.sidebar-bottom-user-info {
+  display: flex;
+  gap: 12px;
+}
+
+.sidebar-bottom-user-info-picture {
+  border: 1px solid #e9eaef;
+  border-radius: 50%;
+}
+
+.sidebar-bottom-user-info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-menu-link-badge {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.sidebar-menu-link-badge-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23px;
+  height: 17px;
+  border-radius: 30px;
+  background: #ea4d4d;
+  color: rgba(255, 255, 255, 1);
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    width: 264px !important;
+    z-index: 0 !important;
+    display: block !important;
+  }
+
+  .sidebar-button-hide {
+    display: none !important;
+  }
+}

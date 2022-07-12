@@ -1,0 +1,157 @@
+.topbar {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 49px 0 32px 0;
+}
+
+.topbar-search-input {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  padding: 20px 20px 18px 44px;
+  border: none;
+  background: url("../icons/search.svg") no-repeat scroll 20px 18px;
+  background-color: #f7f7f9;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(152, 150, 161, 1);
+}
+
+.topbar-search-input::placeholder {
+  color: rgba(152, 150, 161, 1);
+}
+
+.topbar-search-input:focus,
+.topbar-search-input:focus-visible {
+  outline: none;
+}
+
+.topbar-group {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+
+.topbar-button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: #f7f7f9;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease-in background;
+}
+
+.topbar-button:hover,
+.topbar-button:focus {
+  background: rgba(247, 247, 249, 0.8);
+}
+
+.topbar-button > .topbar-icon {
+  transition: 0.2s ease-in background;
+}
+
+.topbar-button:hover > .topbar-icon {
+  background: #7445fb;
+}
+
+.topbar-button-burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar-button-white-eclipse {
+  background: #fff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: relative;
+  top: -7px;
+  right: -35px;
+}
+
+.topbar-button-red-eclipse {
+  background: #ea4d4d;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border-radius: 50%;
+  top: 2px;
+  right: 2px;
+}
+
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar-icon {
+  display: inline-block;
+  mask-size: cover;
+  background: #9896a1;
+}
+
+.topbar-icon-bell {
+  mask: url("../icons/bell.svg");
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -6px;
+}
+
+.topbar-icon {
+  display: inline-block;
+  mask-size: cover;
+  background: #9896a1;
+}
+
+.topbar-icon-burger {
+  mask: url("../icons/burger.svg");
+  width: 16px;
+  height: 14px;
+}
+
+.topbar-icon-language {
+  mask: url("../icons/language.svg");
+  width: 32px;
+  height: 32px;
+}
+
+.topbar-icon-language-active {
+  mask: url("../icons/language.svg");
+  width: 32px;
+  height: 32px;
+  background: #7445fb;
+}
+
+@media (min-width: 992px) {
+  .topbar {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .topbar-button-burger {
+    display: none;
+  }
+
+  .topbar-brand {
+    display: none;
+  }
+
+  .topbar-search-input {
+    width: 232px;
+  }
+}
+
+
+@media (max-width: 340px) {
+  .topbar-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

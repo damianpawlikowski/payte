@@ -1,0 +1,155 @@
+.dashboard-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.dashboard-panel,
+.dashboard-action-centre {
+  background: #f7f7f9;
+  border-radius: 16px;
+  padding: 32px;
+  width: 504px;
+  min-height: 336px;
+}
+
+.dashboard-action-centre {
+  width: 1040px;
+}
+
+.dashboard-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-panel-header-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: rgba(10, 4, 28, 1);
+}
+
+.dashboard-panel-body {
+  margin-bottom: 72px;
+}
+
+.dashboard-panel-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dashboard-action-centre-menu {
+  width: 100%;
+  border-bottom: 1px solid #ebebf3;
+}
+
+.dashboard-action-centre-menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 24px;
+  padding-bottom: 16px;
+}
+
+.dashboard-action-centre-menu-link {
+  color: rgba(152, 150, 161, 1);
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  padding-bottom: 14px;
+  transition: 0.2s ease-in color;
+}
+
+.dashboard-action-centre-menu-link-active {
+  border-bottom: 4px solid rgba(116, 69, 251, 1);
+  font-weight: 500;
+  color: #0a041c;
+}
+
+.dashboard-action-centre-menu-link:hover {
+  color: #0a041c;
+}
+
+.dashboard-action-centre-content {
+  padding: 32px 0px;
+}
+
+.dashboard-action-centre-content-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dashboard-action-centre-content-summary-entry {
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 1px solid #ebebf3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.dashboard-action-centre-content-summary-entry-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.dashboard-action-centre-content-summary-entry-brand-logo {
+  padding: 8px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #ebebf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-action-centre-content-summary-entry-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.dashboard-action-centre-content-summary-entry-axis {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .dashboard-action-centre-content-summary-entry-axis {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dashboard-action-centre-menu-list {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dashboard-action-centre-content-summary-entry {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .dashboard-action-centre-content-summary-entry-detail {
+    align-items: flex-start;
+    width: 100px;
+  }
+}

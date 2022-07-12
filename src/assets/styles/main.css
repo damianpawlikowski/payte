@@ -1,0 +1,23 @@
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+
+@import "_reset.css";
+@import "_utils.css";
+@import "_buttons.css";
+@import "_sidebar.css";
+@import "_topbar.css";
+@import "_dashboard.css";
+@import "_icons.css";
+@import "_elements.css";
+
+.main-wrapper {
+  margin-left: 68px;
+  margin-right: 68px;
+  padding-bottom: 49px;
+}
+
+@media (min-width: 992px) {
+  .main-wrapper {
+    /* 264px is size of the sidebar */
+    margin-left: calc(264px + 68px);
+  }
+}
